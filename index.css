@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+:root {
+  font-size: 100%;
+  font-size: 16px;
+  line-height: 1.5;
+  --primary-black: #000000;
+  --primary-brown: #ffa834;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+}
+
+.Section {
+  display: flex;
+  flex-direction: column;
+}
+.left .edit h1 {
+  color: #000000;
+}
+.left .edit span {
+  color: #ffa834;
+}
+
+img {
+  object-fit: cover;
+  max-width: 70%;
+}
+
+.right {
+  height: 400px;
+}
+.left,
+.right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.right {
+  background: var(--primary-brown);
+  background-size: cover;
+}
+.right img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.right p {
+  color: white;
+  text-align: center;
+  font-weight: 500;
+}
+
+.left h1 {
+  color: #ff9d0b;
+  font-size: 4rem;
+}
+
+@media screen and (min-width: 900px) {
+  .Section {
+    flex-direction: row;
+    height: 120vh;
+    gap: 2rem;
+  }
+  .left {
+    padding: 0;
+    margin: 0;
+  }
+  .left {
+    display: flex;
+    width: 40%;
+    height: auto;
+    padding-left: 5rem;
+  }
+  .right {
+    display: flex;
+    width: 60%;
+    height: auto;
+  }
+  .right .edit {
+    margin-top: 0;
+  }
+
+  .section {
+    padding: 0;
+    margin: 0;
+  }
+
+  .left .edit h1 {
+    position: absolute;
+    color: #ffa834;
+    font-weight: 900;
+    top: 19px;
+
+    text-align: left;
+  }
+  .left .edit span {
+    position: absolute;
+    height: 76px;
+
+    top: 10px;
+    border-radius: nullpx;
+    color: #000000;
+  }
+  .left .edit h2 {
+    margin-top: 6.5rem;
+    font-size: 2rem;
+    font-weight: 700;
+  }
+  .left .edit p {
+    color: #6a6a6a;
+    align-items: center;
+    font-size: 1.25rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
+  }
+  .left form {
+    width: 613px;
+  }
+  form input[type='email'],
+  form input[type='password'] {
+    display: block;
+    width: 100%;
+    border-radius: 15px;
+    background: #ffffff;
+    border: 2px solid #dfdfdf;
+    padding: 0.5rem;
+
+    color: #919191;
+  }
+  label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-size: 0.85rem;
+    color: #565656;
+    font-weight: 500;
+    margin-top: 1rem;
+    position: relative;
+  }
+  .input-cta input {
+    width: 15px;
+    height: 15px;
+    margin-right: 0.4rem;
+    border: 2px solid #dfdfdf;
+    display: inline;
+    text-align: center;
+    justify-content: center;
+    display: inline;
+  }
+
+  .input-cta input {
+    cursor: pointer;
+  }
+
+  /* .checkbox-container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  .checkbox-container {
+    display: block;
+    position: relative;
+    padding-top: 0.5rem;
+    padding-left: 2rem;
+    user-select: none;
+    margin: 0 0rem 1.25rem 0;
+  }
+
+  .checkbox-container input:checked ~ .checkmark {
+    background: blue;
+    border: 1px solid blue;
+  }
+  .checkmark {
+    position: absolute;
+    width: 24px;
+    height: 30px;
+    background: white;
+    border: 1px solid #c4c4c4;
+    border-radius: 2px;
+    top: -4px;
+    left: 0;
+  } */
+  .login-btn {
+    display: block;
+    width: 100%;
+    background: #ffa834;
+    border: 2px solid #ffa834;
+    border-radius: 15px;
+    padding: 0.85rem;
+    color: #fff;
+    font-weight: 700;
+    font-size: 0.85rem;
+  }
+  .account {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0.5rem;
+  }
+  .account p {
+    font-size: 0.85rem;
+    color: #6a6a6a;
+  }
+  .account span {
+    padding-left: 1rem;
+  }
+  a {
+    color: #ff9900;
+    text-decoration: none;
+    font-size: 0.85rem;
+  }
+
+  .right p {
+    font-size: 1.6rem;
+
+    font-weight: 500;
+    font-size: 1.2rem;
+    line-height: 1.5;
+
+    padding-inline: 6rem;
+  }
+  .right img {
+    display: block;
+    margin-inline: auto;
+  }
+}
